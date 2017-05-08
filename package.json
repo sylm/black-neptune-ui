@@ -37,7 +37,9 @@
     "systemjs": "0.19.40",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "ag-grid": "8.0.x",
+    "ag-grid-ng2": "8.0.x"
   },
   "devDependencies": {
     "concurrently": "^3.2.0",

@@ -6,7 +6,8 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+      'npm:': 'node_modules/',
+      'ag-grid-ng2': 'node_modules/ag-grid-ng2'
     },
     // map tells the System loader where to look for things
     map: {
@@ -25,7 +26,10 @@
 
       // other libraries
       'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+
+      'ag-grid': 'node_modules/ag-grid',
+      'ag-grid-ng2': 'node_modules/ag-grid-ng2'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -39,7 +43,14 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'ag-grid-ng2': {
+        defaultExtension: "js"
+      },
+      'ag-grid': {
+        defaultExtension: "js"
       }
     }
+   
   });
 })(this);
