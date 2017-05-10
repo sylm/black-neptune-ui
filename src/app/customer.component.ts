@@ -5,7 +5,8 @@ import {CUSTOMS} from "./custom-mock";
 
 @Component({
   selector: 'customers',
-  templateUrl:'./customer.component.html'
+  templateUrl:'./customer.component.html',
+  styleUrls:['./customer.component.css']
 })
 export class CustomerComponent{
   private gridOptions: GridOptions;
@@ -16,7 +17,7 @@ export class CustomerComponent{
       {
         headerName: "Proposal Id",
         field: "id",
-        width: 90
+        width: 98
       },
       {
         headerName: "Status",
@@ -27,22 +28,22 @@ export class CustomerComponent{
       {
         headerName: "Category",
         field: "category",
-        width: 100
+        width: 120
       },
       {
         headerName: "Goods",
         field: "goods",
-        width: 100
+        width: 160
       },
       {
         headerName: "Description",
         field: "description",
-        width: 100
+        width: 160
       },
       {
         headerName: "Expected price",
         field: "expectedValue",
-        width: 100
+        width: 160
       },
       {
         headerName: "Closing date",

@@ -1,6 +1,52 @@
-<h2>Create your own garden</h2>
-<div style="width: 346px; margin-left: 400px;" >
-  <ag-grid-ng2 #agGrid style="width: 200%; height: 300px;" class="ag-fresh"
-                   [gridOptions]="gridOptions">
-  </ag-grid-ng2>
+<h2><img src="./app/garden.jpg" alt="Mountain View" style="width:142px;height:95px;"> Create your own garden</h2>
+<header>
+  <nav style="margin-left: 200px; margin-top: 50px; ">
+    <a routerLink="/link" routerLinkActive="active">Home</a>
+    <a routerLink="/link" routerLinkActive="active">For customers</a>
+    <a routerLink="/link" routerLinkActive="active">For suppliers</a>
+    <a routerLink="/link" routerLinkActive="active">Help</a>
+    <a routerLink="/link" routerLinkActive="active">Contact Us</a>
+  </nav>
+</header>
+
+<body>
+
+
+<div style="width: 35%; overflow:visible;">
+  <div style="margin-left: 50px; margin-top: 50px; float:left; ">
+    <h3>Login</h3>
+    <form name="form">
+      <div class="form-group">
+        <input type="text" class="form-control" name="username"/>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password"/>
+      </div>
+      <div class="form-group" >
+        <button [disabled]="loading" class="btn btn-primary">Login</button>
+      </div>
+      <div class="form-group" style="margin-right: 10px; margin-top: 5px;">
+        <a routerLink="/link" routerLinkActive="active">Register as supplier</a>
+      </div>
+      <div class="form-group"  style="margin-right: 10px; margin-top: 5px;">
+        <a routerLink="/link" routerLinkActive="active">Register as customer</a>
+      </div>
+      <div class="form-group"  style="margin-right: 10px; margin-top: 5px;">
+        <a routerLink="/link" routerLinkActive="active">Forgot your password</a>
+      </div>
+    </form>
+  </div>
+
+  <div style="width: 346px; margin-top: 100px; float:right;  ">
+    <ag-grid-ng2 #agGrid style="width: 260%; height: 300px;" class="ag-fresh"
+                 [gridOptions]="gridOptions">
+    </ag-grid-ng2>
+  </div>
 </div>
+<div style="clear:both">
+
+</div>
+
+
+</body>
+
